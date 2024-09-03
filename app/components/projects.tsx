@@ -60,7 +60,10 @@ export default function PortfolioSection() {
                   width={200}
                   height={100}
                 /> */}
-                <Button className="mt-4" variant="outline">
+                <Button
+                  className="mt-4 bg-gray-800 text-gray-300"
+                  variant="outline"
+                >
                   <Link
                     href={project.link}
                     rel="noopener noreferrer"
