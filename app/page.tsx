@@ -14,6 +14,9 @@ export default function Component() {
     animation: "gradientMove 10s ease infinite",
   };
 
+  const title = "Ravan Klar";
+  const subTitle =
+    "Full stack developer, continouly creating beautifuland functional web experiences.";
   return (
     <div
       className="flex min-h-screen flex-col items-center justify-center p-2"
@@ -27,11 +30,10 @@ export default function Component() {
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-slate-200">
-                  Ravan Klar
+                  {title}
                 </h1>
                 <p className="mx-auto max-w-[700px] text-slate-300 md:text-xl dark:text-slate-200">
-                  Web Developer & Designer. Passionate about creating beautiful
-                  and functional web experiences.
+                  {subTitle}
                 </p>
               </div>
               <div className="space-x-4">
