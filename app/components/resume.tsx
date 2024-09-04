@@ -22,7 +22,7 @@ export default function ResumeSection() {
           >
             <Download className="mr-2 h-4 w-4" />
             <Link
-              href="https://firebasestorage.googleapis.com/v0/b/mood-tracker-73e68.appspot.com/o/ravank_08_24.pdf?alt=media&token=d40901e2-d8e6-4c3a-950c-01ae92c3aced"
+              href="https://firebasestorage.googleapis.com/v0/b/mood-tracker-73e68.appspot.com/o/ravank_resume.pdf?alt=media&token=8f7d35f2-4963-42a8-ba31-be87619c0448"
               rel="noopener noreferrer"
               target="_blank"
             >
