@@ -11,9 +11,10 @@ import {
   Banner,
   PortfolioSection,
 } from "./components";
+import { motion } from "framer-motion";
 
 export default function Component() {
-  const [showBanner, setShowBanner] = useState(true);
+  const [showBanner, setShowBanner] = useState(false);
 
   const gradientStyle = {
     background: "linear-gradient(270deg, #3498db, #e91e63, #9b59b6, #3498db)",
@@ -36,12 +37,22 @@ export default function Component() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-slate-200">
+                <motion.h1
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                  className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-slate-200"
+                >
                   {title}
-                </h1>
-                <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl dark:text-slate-200">
+                </motion.h1>
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  className="text-xl md:text-2xl lg:text-xl mb-10 max-w-4xl mx-auto text-gray-300"
+                >
                   {subTitle}
-                </p>
+                </motion.p>
               </div>
               <SocialSection />
             </div>
