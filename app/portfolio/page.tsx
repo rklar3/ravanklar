@@ -48,7 +48,7 @@ export default function Component() {
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6 }}
-                  className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-slate-200"
+                  // className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-slate-200"
                 >
                   {title}
                 </motion.h1>
@@ -56,7 +56,7 @@ export default function Component() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.2 }}
-                  className="text-xl md:text-2xl lg:text-xl mb-10 max-w-4xl mx-auto text-gray-300"
+                  // className="text-xl md:text-2xl lg:text-xl mb-10 max-w-4xl mx-auto text-gray-300"
                 >
                   {subTitle}
                 </motion.p>

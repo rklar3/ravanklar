@@ -74,12 +74,12 @@ export default function PortfolioSection() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-5xl lg:text-5xl font-bold mb-6 text-slate-200 text-center mb-8 font-bold tracking-tighter"
+          // className="text-3xl md:text-5xl lg:text-5xl font-bold mb-6 text-slate-200 text-center mb-8 font-bold tracking-tighter"
         >
           {title}
         </motion.h2>
         <motion.div
-          className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          // className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
           variants={containerVariants}
           initial="hidden"
           animate="visible"

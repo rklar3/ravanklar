@@ -20,7 +20,7 @@ export default function LandingPage() {
   const [score, setScore] = useState(0);
   const [gameOver, setGameOver] = useState(false);
   const [speed, setSpeed] = useState(INITIAL_SPEED);
-  const gameLoopRef = useRef<NodeJS.Timeout>();
+  const gameLoopRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     const handleKeyPress = (e: KeyboardEvent) => {
@@ -92,7 +92,11 @@ export default function LandingPage() {
     };
 
     gameLoopRef.current = setInterval(moveSnake, speed);
-    return () => clearInterval(gameLoopRef.current);
+    return () => {
+      if (gameLoopRef.current) {
+        clearInterval(gameLoopRef.current);
+      }
+    };
   }, [snake, direction, apple, gameOver, score, speed]);
 
   const getRandomApplePosition = (snake: { x: number; y: number }[]) => {
